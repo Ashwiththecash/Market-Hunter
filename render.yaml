@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: market-hunter
+    runtime: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: python market_hunter.py

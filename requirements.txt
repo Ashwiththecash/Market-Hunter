@@ -1,0 +1,1 @@
+# Market Hunter V1 uses only Python standard-library modules.
