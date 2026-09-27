@@ -385,7 +385,8 @@ def fetch_polymarket() -> tuple[list[dict[str, Any]], dict[str, Any], list[dict[
 
 def fetch_kalshi() -> tuple[list[dict[str, Any]], dict[str, Any], list[dict[str, Any]]]:
     fetched_at = utc_now()
-    "https://external-api.kalshi.com/trade-api/v2/markets",
+    base_urls = [
+        "https://external-api.kalshi.com/trade-api/v2/markets",
     ]
     last_error = "No Kalshi endpoint responded"
     last_endpoint: str | None = None
